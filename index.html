@@ -27,6 +27,10 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
     <link rel="stylesheet" href="style.css" />
+
+    <!-- Animation On Scroll -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
   </head>
 
   <body>
@@ -40,7 +44,7 @@
         <h1>Chandra & Icha</h1>
         <p>Akan melangsungkan resepsi pernikahan dalam :</p>
         <div class="simply-countdown"></div>
-        <a href="#home" class="tampil" id="tampil"><button onClick=" putarmusic(), enableScroll()">Lihat Undangan</button></a>
+        <a href="#cover" class="tampil" id="tampil"><button onClick=" putarmusic(), enableScroll()">Lihat Undangan</button></a>
       </main>
     </section>
 
@@ -75,25 +79,53 @@
           <div class="offcanvas-body">
             <div>
             <div class="navbar-nav ms-auto">
+                <a class="nav-link" href="#cover">Cover</a>
+                <a class="nav-link" href="#kata-kata">Kalimat Mutiara</a>
                 <a class="nav-link" href="#home">Home</a>
                 <a class="nav-link" href="#info">Information</a>
-                <a class="nav-link" href="#story">Story</a>
-                <a class="nav-link" href="#gallery">Gallery</a>
                 <a class="nav-link" href="#rsvp">RSVP</a>
                 <a class="nav-link" href="#gifts">Gifts</a>
+                <a class="nav-link" href="#reservasi">Reservasi</a>
+                <a class="nav-link" href="#story">Story</a>
+                <a class="nav-link" href="#gallery">Gallery</a>
             </div>
           </div>
         </div>
       </div>
     </nav>
 
+    <section id="cover" class="cover">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 text-center">
+            <h1 data-aos="fade-up" data-aos-duration="3000">Chandra</h1>
+            <h1 data-aos="fade-up" data-aos-duration="2800">&</h1>
+            <h1 data-aos="fade-up" data-aos-duration="2700">Icha</h1>
+            <h2 data-aos="fade-up" data-aos-duration="3000">01 Month 1234</h2>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="kata-kata" class="kata-kata">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 text-center">
+            <h2 data-aos="zoom-out" data-aos-duration="3000">Kalimat Mutiara</h2>
+            <h3 data-aos="zoom-out" data-aos-duration="2700">Demikianlah mereka bukan lagi dua, melainkan satu. Karena itu, apa yang telah dipersatukan Allah, tidak boleh diceraikan manusia.”</h3>
+            <h3 data-aos="zoom-out" data-aos-duration="2600">Matius 19 : 6</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section id="home" class="home">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-md-8 text-center">
-            <h2>Acara pernikahan</h2>
-            <h3>Diselenggarakan pada 00 Oktober 0000 di Lubuk Pakam, Sumatera Utara.</h3>
-            <p>Oleh karena itu, dengan hormat, kami bermaksud untuk mengundang Bapak/Ibu/Saudara/i, untuk hadir pada acara pernikahan kami</p>
+            <h2 data-aos="zoom-out" data-aos-duration="2500">Acara pernikahan</h2>
+            <h3 data-aos="zoom-out" data-aos-duration="2500">Diselenggarakan pada 00 Oktober 0000 di Lubuk Pakam, Sumatera Utara.</h3>
+            <p data-aos="zoom-out" data-aos-duration="2500">Oleh karena itu, dengan hormat, kami bermaksud untuk mengundang Bapak/Ibu/Saudara/i, untuk hadir pada acara pernikahan kami</p>
           </div>
         
         </div>
@@ -102,28 +134,28 @@
           <div class="col-lg-6">
             <div class="row">
               <div class="col-8 text-end">
-                <h3>Chandra Andiva Tarigan</h3>
-                <p>Mempelai Pria yang lahir pada tanggal 15 - Oktober - 2001 anak ke 2 dari 2 bersaudara. Tinggal di Bakaran Batu, Sumatera Utara, Indonesia</p>
-                <p>Putra dari Sardi Tarigan <br> Dan <br> Rahmawati Magdalena br Ginting </p>
+                <h3 data-aos="zoom-in-right" data-aos-duration="2700">Chandra Andiva Tarigan</h3>
+                <p data-aos="zoom-in-right" data-aos-duration="2700">Mempelai Pria, anak ke 2 dari 2 bersaudara. Tinggal di Bakaran Batu, Sumatera Utara, Indonesia</p>
+                <p data-aos="zoom-in-right" data-aos-duration="2700">Putra dari Sardi Tarigan <br> Dan <br> Rahmawati Magdalena br Ginting </p>
               </div>
-              <div class="col-4">
+              <div class="col-4" data-aos="flip-left" data-aos-duration="2700">
                 <img src="img/chandra.png" alt="Chandra Andiva Tarigan" class="img-responsive rounded-circle">
               </div>
             </div>
           </div>
 
-          <span class="heart"><i class="bi bi-hearts"></i></span>
-
+          
           <div class="col-lg-6">
             <div class="row">
-              <div class="col-4">
+              <div class="col-4" data-aos="flip-right" data-aos-duration="2700">
                 <img src="img/icha.png" alt="Merica Bina br Sitepu" class="img-responsive rounded-circle">
               </div>
               <div class="col-8 text-start">
-                <h3>Merica Bina br Sitepu</h3>
-                <p>Mempelai Wanita yang lahir pada tanggal 23 - Agustus - 2002 anak ke 1 dari 4 bersaudara. Tinggal di Lubuk Pakam, Sumatera Utara, Indonesia </p>
-                <p>Putri dari Charles Hasiholan Sitepu <br> Dan <br> Marlina br Sinaga  </p>
+                <h3 data-aos="zoom-in-left" data-aos-duration="2700">Merica Bina br Sitepu</h3>
+                <p data-aos="zoom-in-left" data-aos-duration="2700">Mempelai Wanita, anak ke 1 dari 4 bersaudara. Tinggal di Lubuk Pakam, Sumatera Utara, Indonesia </p>
+                <p data-aos="zoom-in-left" data-aos-duration="2700">Putri dari Charles Hasiholan Sitepu <br> Dan <br> Marlina br Sinaga  </p>
               </div>
+              <span class="heart"><i class="bi bi-hearts"></i></span>
             </div>
           </div>
         </div>
@@ -134,16 +166,14 @@
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-md-8 col-10 text-center">
-            <h2>Informasi Acara</h2>
-            <p class="alamat">Alamat : Wisma Nusantara, Lubuk Pakam, Samping Terminal <br> Sumatera Utara</p>
-            <a href="https://goo.gl/maps/9RPg3iuWZkquoaSD9" target="_blank" class="btn btn-light btn-sm my-4">Klik Untuk Membuka Peta</a>
-            <p class="description">Diharapkan untuk tidak salah alamat dan tanggal. Manakala tiba di tujuan namun tidak ada tanda - tanda sedang dilangsungkan pernikahan, boleh jadi Anda salah jadwal, atau salah</p>
+            <h2 data-aos="fade-up" data-aos-duration="2900">Informasi Acara</h2>
+            <p class="description" data-aos="fade-up" data-aos-duration="2900">Diharapkan untuk tidak salah alamat dan tanggal. Manakala tiba di tujuan namun tidak ada tanda - tanda sedang dilangsungkan pernikahan, boleh jadi Anda salah jadwal, atau salah</p>
           </div>
         </div>
 
         <div class="row justify-content-center mt-4">
           <div class="col-md-5 col-10">
-            <div class="card text-center text-bg-light mb-4">
+            <div class="card text-center text-bg-light mb-4" data-aos="fade-up-right" data-aos-duration="2700">
               <div class="card-header">
                 PEMBERKATAN
               </div>
@@ -156,9 +186,14 @@
                     <i class="bi bi-calendar3 d-block"></i>
                     <span>Days, 00 Month 0000</span>
                   </div>
+                  <div class="col-md-6">
+                    <i class="bi bi-geo d-block"></i>
+                    <span>GBKP Runggun Lubuk Pakam</span>
+                  </div>
                 </div>
               </div>
               <div class="card-footer">
+                <a href="https://goo.gl/maps/ZSxqTf88eXWNEt818" target="_blank" class="btn btn-light btn-sm my-4">Klik Untuk Membuka Peta</a> <br>
                 Saat acara diharapkan untuk tetap menjaga ketertiban dan juga kebersihan demi kenyamanan kita bersama
               </div>
             </div>
@@ -167,7 +202,7 @@
           <br>
         </div>
           <div class="col-md-5 col-10">
-            <div class="card text-center text-bg-light">
+            <div class="card text-center text-bg-light" data-aos="fade-up-left" data-aos-duration="2700">
               <div class="card-header">
                 RESEPSI / ADAT
               </div>
@@ -180,9 +215,14 @@
                     <i class="bi bi-calendar3 d-block"></i>
                     <span>Days, 00 Month 0000</span>
                   </div>
+                  <div class="col-md-6">
+                    <i class="bi bi-geo d-block"></i>
+                    <span>Wisma Nusantara</span>
+                  </div>
                 </div>
               </div>
               <div class="card-footer">
+                <a href="https://goo.gl/maps/DgLR37yooa9mC9hr6" target="_blank" class="btn btn-light btn-sm my-4">Klik Untuk Membuka Peta</a> <br>
                 Saat acara diharapkan untuk tetap menjaga ketertiban dan juga kebersihan demi kenyamanan kita bersama
               </div>
             </div>
@@ -191,13 +231,134 @@
       </div>
     </section>
 
+    
+    <section id="rsvp" class="rsvp">
+  <div class="container" data-aos="fade-up" data-aos-duration="2500">
+<div class="row justify-content-center">
+<div class="col-md-8 col-10 text-center">
+  <h2>Ucapan dan Doa</h2>
+  <p>Berikan ucapan dan doa terbaik kamu untuk kami</p>
+</div>
+</div>
+
+
+<form class="row row-cols-md-auto g-3 align-items-center justify-content-center"
+method="POST"
+action="https://script.google.com/macros/s/AKfycbxryRz1qnZ6BH3ERFt0qmRrf0_liZIw_K52kacEVHchkMTN_oBELf-Yy5Df4jpiUkld/exec" id="ucapandandoa">
+<div class="col-12">
+  <div class="mb-3">
+    <label for="nama" class="form-label">Nama</label>
+    <input type="text" class="form-control" id="nama" name="nama">
+  </div>
+</div>
+<div class="col-12">
+  <div class="mb-3">
+    <label for="ucapan dan doa" class="form-label">Ucapan & Doa</label>
+    <input type="text" class="form-control" id="ucapan dan doa" name="ucapan dan doa">
+  </div>
+</div>
+<div class="col-12" style="margin-top: 35px;">
+  <button class="btn btn-primary">Kirim</button>
+</div>
+</form>
+</div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section id="gifts" class="gifts">
+  <div class="container" data-aos="fade-up" data-aos-duration="2500">
+    <div class="row justify-content-center">
+      <div class="col-md-8 col-10 text-center">
+        <span>kami menerima kado pernikahan digital melalui tab berikut ini</span>
+        <h2>Kado Digital</h2>
+        <p>BRI, Dana, Saweria</p>
+     </div>
+    </div>
+    
+    <div class="row justify-content-center text-center">
+      <div class="col-md-6">
+        <ul class="list-group">
+          <li class="list-group-item">
+            <div class="fw-bold">BRI</div>
+            026601060151502 - Merica Bina Br Sitepu
+          </li>
+          <li class="list-group-item">
+            <div class="fw-bold">DANA</div>
+            0821600764775 - Merica Bina Br Sitepu
+          </li>
+          <li class="list-group-item">
+            <div class="fw-bold">Saweria / QRIS </div>
+            <img src="img/qris.png" alt="Saweria QR" class="img-thumbnail" width="150">
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="reservasi" class="reservasi">
+  <div class="container" class="timeline-body" data-aos="fade-up" data-aos-duration="2700">
+    <div class="row justify-content-center">
+      <div class="col-md-8 col-10 text-center">
+        <h2>Reservasi kehadiran</h2>
+        <p>isi form dibawah ini untuk melakukan konfirmasi kehadiran</p>
+     </div>
+    </div>
+
+
+    <form class="row row-cols-md-auto g-3 align-items-center justify-content-center"
+    method="POST"
+    action="https://script.google.com/macros/s/AKfycbxASFGUQbq0zhcqURBYa5-5u7juxb7B6SXxqDRKm3Lp05WvHr9v8dMz41zHIziN-jrz5w/exec" id="my-form">
+      <div class="col-12">
+        <div class="mb-3">
+          <label for="nama" class="form-label">Nama</label>
+          <input type="text" class="form-control" id="nama" name="nama">
+        </div>
+      </div>
+      <div class="col-12">
+        <div class="mb-3">
+          <label for="jumlah" class="form-label">Jumlah</label>
+          <input type="number" class="form-control" id="jumlah" name="jumlah" min="1" max="10" length="1" value="1">
+        </div>
+      </div>
+      <div class="col-12">
+        <div class="mb-3">
+          <label for="status" class="form-label">Konfirmasi</label>
+          <select name="status" id="status" class="form-select">
+            <option selected>Pilih salah satu</option>
+            <option value="Hadir">Hadir</option>
+            <option value="Tidak Hadir">Tidak Hadir</option>
+          </select>
+        </div>
+      </div>
+      <div class="col-12" style="margin-top: 35px;">
+        <button class="btn btn-primary">Kirim</button>
+      </div>
+    </form>
+  </div>
+</section>
+<br>
+<br>
+<br>
+
     <section id="story" class="story">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-md-8 col-10 text-center">
-            <span>Bagaimana Cinta Kami Bersemi</span>
-            <h2>Cerita Kami</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus ea qui exercitationem totam.</p>
+            <span data-aos="fade-up" data-aos-duration="2700">Bagaimana Cinta Kami Bersemi</span>
+            <h2 data-aos="fade-up" data-aos-duration="2700">Cerita Kami</h2>
+            <p data-aos="fade-up" data-aos-duration="2700">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus ea qui exercitationem totam.</p>
           </div>
         </div>
 
@@ -205,13 +366,13 @@
           <div class="col">
             <ul class="timeline">
               <li>
-                <div class="timeline-image" style="background-image: url(https://picsum.photos/400/300);"></div>
-                <div class="timeline-panel">
+                <div class="timeline-image" data-aos="flip-right" data-aos-duration="2700" style="background-image: url(https://picsum.photos/400/300);"></div>
+                <div class="timeline-panel" data-aos="fade-up" data-aos-duration="2700">
                   <div class="timeline-heading">
                     <h3>Pertama bertemu</h3>
                     <span>00 xxxx 0000</span>
                   </div>
-                  <div class="timeline-body">
+                  <div class="timeline-body" >
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, sunt architecto blanditiis excepturi velit delectus.</p>
                   </div>
 
@@ -220,13 +381,13 @@
 
               </li>
               <li class="timeline-inverted">
-                <div class="timeline-image" style="background-image: url(https://picsum.photos/300/300);"></div>
-                <div class="timeline-panel">
-                  <div class="timeline-heading">
+                <div class="timeline-image" data-aos="flip-right" data-aos-duration="2700" style="background-image: url(https://picsum.photos/300/300);"></div>
+                <div class="timeline-panel" data-aos="fade-up" data-aos-duration="2700">
+                  <div class="timeline-heading" >
                     <h3>Mulai Serius</h3>
                     <span>00 xxxx 0000</span>
                   </div>
-                  <div class="timeline-body">
+                  <div>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, sunt architecto blanditiis excepturi velit delectus.</p>
                   </div>
 
@@ -235,8 +396,8 @@
 
               </li>
               <li >
-                <div class="timeline-image" style="background-image: url(https://picsum.photos/323/300);"></div>
-                <div class="timeline-panel">
+                <div class="timeline-image" data-aos="flip-right" data-aos-duration="2700" style="background-image: url(https://picsum.photos/323/300);"></div>
+                <div class="timeline-panel" data-aos="fade-up" data-aos-duration="2700">
                   <div class="timeline-heading">
                     <h3>MBS</h3>
                     <span>00 xxxx 0000</span>
@@ -254,7 +415,7 @@
 
     <section id="gallery" class="gallery">
       <div class="container">
-        <div class="row justify-content-center">
+        <div class="row justify-content-center" data-aos="fade-up" data-aos-duration="2700">
           <div class="col-md-8 col-10 text-center">
           <span>Memori Kisah Kami</span>
           <h2>Galeri Foto</h2>
@@ -263,126 +424,52 @@
         </div>
 
         <div class="row row-cols-lg-4 row-cols-md-3 row-cols-sm-2 row-cols-1">
-          <div class="col mt-3">
+          <div class="col mt-3" data-aos="zoom-out-up" data-aos-duration="2600">
             <a href="img/galery/1.png" data-toggle="lightbox data-caption=This describe the image">
               <img src="img/galery/thumbnail/1.png" alt="ChaCha 1" class="img-fluid w-100 rounded">
             </a>
           </div>
-          <div class="col mt-3">
+          <div class="col mt-3" data-aos="zoom-out-up" data-aos-duration="2600">
             <a href="img/galery/1.png" data-toggle="lightbox data-caption=This describe the image">
-              <img src="img/galery/thumbnail/1.png" alt="ChaCha 1" class="img-fluid w-100 rounded">
+              <img src="img/galery/thumbnail/1.png" alt="ChaCha 2" class="img-fluid w-100 rounded">
             </a>
           </div>
-          <div class="col mt-3">
+          <div class="col mt-3" data-aos="zoom-out-up" data-aos-duration="2600">
             <a href="https://picsum.photos/id/6/1200/768" data-toggle="lightbox data-caption=This describe the image">
-              <img src="https://picsum.photos/id/6/400/300" alt="ChaCha 1" class="img-fluid w-100 rounded">
+              <img src="https://picsum.photos/id/6/400/300" alt="ChaCha 3" class="img-fluid w-100 rounded">
             </a>
           </div>
-          <div class="col mt-3">
+          <div class="col mt-3" data-aos="zoom-out-up" data-aos-duration="2600">
             <a href="https://picsum.photos/id/7/1200/768" data-toggle="lightbox data-caption=This describe the image">
-              <img src="https://picsum.photos/id/7/400/300" alt="ChaCha 1" class="img-fluid w-100 rounded">
+              <img src="https://picsum.photos/id/7/400/300" alt="ChaCha 4" class="img-fluid w-100 rounded">
             </a>
           </div>
-          <div class="col mt-3">
+          <div class="col mt-3" data-aos="zoom-out-up" data-aos-duration="2600">
             <a href="https://picsum.photos/id/8/1200/768" data-toggle="lightbox data-caption=This describe the image">
-              <img src="https://picsum.photos/id/8/400/300" alt="ChaCha 1" class="img-fluid w-100 rounded">
+              <img src="https://picsum.photos/id/8/400/300" alt="ChaCha 5" class="img-fluid w-100 rounded">
             </a>
           </div>
-          <div class="col mt-3">
+          <div class="col mt-3" data-aos="zoom-out-up" data-aos-duration="2600">
             <a href="https://picsum.photos/id/9/1200/768" data-toggle="lightbox data-caption=This describe the image">
-              <img src="https://picsum.photos/id/9/400/300" alt="ChaCha 1" class="img-fluid w-100 rounded">
+              <img src="https://picsum.photos/id/9/400/300" alt="ChaCha 6" class="img-fluid w-100 rounded">
             </a>
           </div>
-          <div class="col mt-3">
+          <div class="col mt-3" data-aos="zoom-out-up" data-aos-duration="2600">
             <a href="https://picsum.photos/id/11/768/1200" data-toggle="lightbox data-caption=This describe the image">
-              <img src="https://picsum.photos/id/11/400/300" alt="ChaCha 1" class="img-fluid w-100 rounded">
+              <img src="https://picsum.photos/id/11/400/300" alt="ChaCha 7" class="img-fluid w-100 rounded">
             </a>
           </div>
-          <div class="col mt-3">
+          <div class="col mt-3" data-aos="zoom-out-up" data-aos-duration="2600">
             <a href="https://picsum.photos/id/10/1200/768" data-toggle="lightbox data-caption=This describe the image">
-              <img src="https://picsum.photos/id/10/400/300" alt="ChaCha 1" class="img-fluid w-100 rounded">
+              <img src="https://picsum.photos/id/10/400/300" alt="ChaCha 8" class="img-fluid w-100 rounded">
             </a>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="rsvp" class="rsvp">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-md-8 col-10 text-center">
-            <h2>Konfirmasi kehadiran</h2>
-            <p>isi form dibawah ini untuk melakukan konfirmasi kehadiran</p>
-         </div>
-        </div>
 
 
-        <form class="row row-cols-md-auto g-3 align-items-center justify-content-center"
-        method="POST"
-        action="https://script.google.com/macros/s/AKfycbxASFGUQbq0zhcqURBYa5-5u7juxb7B6SXxqDRKm3Lp05WvHr9v8dMz41zHIziN-jrz5w/exec" id="my-form">
-          <div class="col-12">
-            <div class="mb-3">
-              <label for="nama" class="form-label">Nama</label>
-              <input type="text" class="form-control" id="nama" name="nama">
-            </div>
-          </div>
-          <div class="col-12">
-            <div class="mb-3">
-              <label for="jumlah" class="form-label">Jumlah</label>
-              <input type="number" class="form-control" id="jumlah" name="jumlah" min="1" max="10" length="1" value="1">
-            </div>
-          </div>
-          <div class="col-12">
-            <div class="mb-3">
-              <label for="status" class="form-label">Konfirmasi</label>
-              <select name="status" id="status" class="form-select">
-                <option selected>Pilih salah satu</option>
-                <option value="Hadir">Hadir</option>
-                <option value="Tidak Hadir">Tidak Hadir</option>
-              </select>
-            </div>
-          </div>
-          <div class="col-12" style="margin-top: 35px;">
-            <button class="btn btn-primary">Kirim</button>
-          </div>
-        </form>
-
-
-
-      </div>
-    </section>
-
-    <section id="gifts" class="gifts">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-md-8 col-10 text-center">
-            <span>ungkapan tanda kasih</span>
-            <h2>Kirim Hadiah</h2>
-            <p>Gift dan dukung kami dengan metode transfer BANK / QRIS scan</p>
-            <p>Terima Kasih telah memberi Gift dan dukungan nya</p>
-         </div>
-        </div>
-
-        <div class="row justify-content-center text-center">
-          <div class="col-md-6">
-            <ul class="list-group">
-              <li class="list-group-item">
-                <div class="fw-bold">BRI</div>
-                026601060151502 - Merica Bina Br Sitepu
-              </li>
-              <li class="list-group-item">
-                <div class="fw-bold">DANA</div>
-                0821600764775 - Merica Bina Br Sitepu
-              </li>
-              <li class="list-group-item">
-                <div class="fw-bold">Saweria / QRIS </div>
-                <img src="img/qris.png" alt="Saweria QR" class="img-thumbnail" width="150">
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
     
     <footer>
       <div class="container">
@@ -490,5 +577,30 @@
 });
 
     </script>
+
+<script>
+  window.addEventListener("load", function() {
+  const form = document.getElementById('ucapandandoa');
+  form.addEventListener("submit", function(e) {
+    e.preventDefault();
+    const data = new FormData(form);
+    const action = e.target.action;
+    fetch(action, {
+      method: 'POST',
+      body: data,
+    })
+    .then(() => {
+      alert("Terima Kasih, Ucapan Dan Doa Anda Berhasil Dikirimkan!");
+    })
+  });
+});
+
+    </script>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
   </body>
 </html>
