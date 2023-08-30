@@ -40,7 +40,8 @@
       class="hero w-100 h-100 p-3 mx-auto text-center d-flex justify-content-center align-items-center text-white"
     >
       <main>
-        <h4>Kepada Nama Tamu</h4>
+        <h4>Kepada</h4>
+        <h4 class="namatamu">Nama Tamu</h4>
         <h1>Chandra & Icha</h1>
         <p>Akan melangsungkan resepsi pernikahan dalam :</p>
         <div class="simply-countdown"></div>
@@ -600,6 +601,32 @@ action="https://script.google.com/macros/s/AKfycbxryRz1qnZ6BH3ERFt0qmRrf0_liZIw_
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
   AOS.init();
+</script>
+
+<script>
+  // custom nama tamu undangan
+  var urlParams = new URLSearchParams(window.location.search);
+  if (urlParams) {
+    var textElement = document.getElementById('namatamu');
+    var defaultText = textElement.innerHTML;
+    var newText = defaultText;
+
+    if (urlParams.has('to')) {
+      var toValue = urlParams.get('to');
+      newText = newText.replace(/Tamu Undangan/g, toValue);
+    }
+
+    if (urlParams.has('dear')) {
+      var dearValue = urlParams.get('dear');
+      newText = newText.replace(/Tamu Undangan/g, dearValue);
+    }
+
+    if (urlParams.has('kepada')) {
+      var kepadaValue = urlParams.get('kepada');
+      newText = newText.replace(/Tamu Undangan/g, kepadaValue);
+    }
+
+  }
 </script>
 
   </body>
