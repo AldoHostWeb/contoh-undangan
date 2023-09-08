@@ -40,8 +40,7 @@
       class="hero w-100 h-100 p-3 mx-auto text-center d-flex justify-content-center align-items-center text-white"
     >
       <main>
-        <h4>Kepada</h4>
-        <h4 class="namatamu">Tamu Undangan</h4>
+        <h4>Kepada <span></span></h4>
         <h1>Chandra & Icha</h1>
         <p>Akan melangsungkan resepsi pernikahan dalam :</p>
         <div class="simply-countdown"></div>
@@ -471,6 +470,42 @@ action="https://script.google.com/macros/s/AKfycbxryRz1qnZ6BH3ERFt0qmRrf0_liZIw_
 
 
 
+  </section>
+  <div class="row justify-content-center mt-5">
+    <div class="col-md-6">
+      <div id="disqus_thread"></div>
+      <script>
+        /**
+         *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+         *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+
+        var disqus_config = function () {
+          this.page.url = "https://sandhikagalih.me"; // Replace PAGE_URL with your page's canonical URL variable
+          this.page.identifier = "https://sandhikagalih.me"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        };
+
+        (function () {
+          // DON'T EDIT BELOW THIS LINE
+          var d = document,
+            s = d.createElement("script");
+          s.src = "https://dino-wedding-1.disqus.com/embed.js";
+          s.setAttribute("data-timestamp", +new Date());
+          (d.head || d.body).appendChild(s);
+        })();
+      </script>
+      <noscript
+        >Please enable JavaScript to view the
+        <a href="https://disqus.com/?ref_noscript"
+          >comments powered by Disqus.</a
+        ></noscript
+      >
+    </div>
+  </div>
+</div>
+</section>
+
+
+
     
     <footer>
       <div class="container">
@@ -501,9 +536,9 @@ action="https://script.google.com/macros/s/AKfycbxryRz1qnZ6BH3ERFt0qmRrf0_liZIw_
     <script>
       simplyCountdown(".simply-countdown", {
         year: 2023, // required
-        month: 10, // required
-        day: 27, // required
-        hours: 8, // Default is 0 [0-23] integer
+        month: 11, // required
+        day: 17, // required
+        hours: 3, // Default is 0 [0-23] integer
         words: {
           //words displayed into the countdown
           days: { singular: "hari", plural: "hari" },
@@ -603,30 +638,15 @@ action="https://script.google.com/macros/s/AKfycbxryRz1qnZ6BH3ERFt0qmRrf0_liZIw_
   AOS.init();
 </script>
 
+<!-- custom nama tamu -->
 <script>
-  // custom nama tamu undangan
-  var urlParams = new URLSearchParams(window.location.search);
-  if (urlParams) {
-    var textElement = document.getElementById('namatamu');
-    var defaultText = textElement.innerHTML;
-    var newText = defaultText;
+  const urlParams = new URLSearchParams(window.location.search);
+  const nama = urlParams.get("n") || "";
+  const pronoun = urlParams.get("p") || "Bapak/Ibu/Saudara/i";
+  const namaContainer = document.querySelector(".hero h4 span");
+  namaContainer.innerText = `${pronoun} ${nama},`.replace(/ ,$/, ",");
 
-    if (urlParams.has('to')) {
-      var toValue = urlParams.get('to');
-      newText = newText.replace(/Tamu Undangan/g, toValue);
-    }
-
-    if (urlParams.has('dear')) {
-      var dearValue = urlParams.get('dear');
-      newText = newText.replace(/Tamu Undangan/g, dearValue);
-    }
-
-    if (urlParams.has('kepada')) {
-      var kepadaValue = urlParams.get('kepada');
-      newText = newText.replace(/Tamu Undangan/g, kepadaValue);
-    }
-
-  }
+  document.querySelector("#nama").value = nama;
 </script>
 
   </body>
