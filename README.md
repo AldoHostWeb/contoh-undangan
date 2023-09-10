@@ -14,4 +14,6 @@ tag gift, debit and qris
 hamburger menu
 rsvp
 reservasi kehadiran
-copyrigh footer and social media
+copyright footer and social media
+
+Update Patch 9.12
