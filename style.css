@@ -1,5 +1,5 @@
 :root {
-  --pink: #f14e95;
+  --pink: #ff0077;
   --bg: #0a0a0a;
   --shadow: 0 2px 2px rgba(0 0 0 / 0.5);
   --sdw: #0a0a0a
@@ -49,6 +49,7 @@ body {
   font-size: 1.4rem;
 }
 
+
 .hero h2 span {
   color: rgb(255, 255, 255);
   font-size: 5rem;
@@ -63,7 +64,7 @@ body {
   font-size: 1.3rem;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-  margin-top: 8rem;
+  margin-top: 0rem;
   border-radius: 10px;
 }
 
@@ -337,11 +338,11 @@ body {
 .timeline li .timeline-panel {
   width: 40%;
   float: left;
-  border: 1px solid #ccc;
+  border: 1px solid #cccccc00;
   padding: 2rem;
   position: relative;
   border-radius: 8px;
-  background-color: #fff;
+  background-color: #ffffff;
 }
 
 .timeline li .timeline-panel::before {
@@ -349,8 +350,8 @@ body {
   display: inline-block;
   position: absolute;
   border-top: 14px solid transparent;
-  border-left: 14px solid #fff;
-  border-right: 0 solid #fff;
+  border-left: 14px solid #ffffff00;
+  border-right: 0 solid #ffffff00;
   border-bottom: 14px solid transparent;
   top: 81px;
   right: -13px;
