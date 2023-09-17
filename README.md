@@ -16,4 +16,4 @@ rsvp
 reservasi kehadiran
 copyright footer and social media
 
-Update Patch 10.0
+Update Patch 9.12

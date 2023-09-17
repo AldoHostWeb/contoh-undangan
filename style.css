@@ -52,7 +52,7 @@ body {
 
 .hero h2 span {
   color: rgb(255, 255, 255);
-  font-size: 5rem;
+  font-size: 4rem;
   font-family: "patua one";
   text-shadow: var(--bg);
 }
