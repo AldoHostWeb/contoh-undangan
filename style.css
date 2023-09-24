@@ -18,7 +18,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url(img/bg-prewed.jpg);
+  background-image: url(img/ASP_8633-Edit.jpeg.jpg);
   background-size: cover;
   background-position: center;
   z-index: -1;
@@ -282,6 +282,14 @@ body {
   font-weight: 500;
 }
 
+.gallery h1,
+.credits h2 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.credits h2 {
+  padding-top: -2rem;
+}
 .gallery a {
   height: 20px;
 }
@@ -707,6 +715,6 @@ footer li {
 
   
   .gallery img {
-    
+    padding-top: 0rem;
   }
 }
