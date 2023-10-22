@@ -430,13 +430,15 @@ body {
   color: white;
 }
 
-.rsvp button {
+.rsvp button,
+.reservasi button {
   background-color: var(--pink);
   color: white;
   border: 1px solid var(--bg);
 }
 
-.rsvp button:hover {
+.rsvp button:hover,
+.reservasi button:hover {
   background-color: white;
   color: var(--pink);
   border: 1px solid white;
@@ -558,6 +560,10 @@ body {
 .credits p a {
   color: var(--pink);
   text-decoration: none;
+}
+
+.credits p a:hover {
+  color: black
 }
 
 @keyframes slideDown {
