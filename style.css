@@ -52,7 +52,7 @@ body {
 
 .hero h2 span {
   color: rgb(255, 255, 255);
-  font-size: 4rem;
+  font-size: 3rem;
   font-family: "patua one";
   text-shadow: var(--bg);
 }
@@ -644,6 +644,17 @@ footer li {
   list-style: none;
   display: inline;
   margin: 0.5rem;
+}
+
+.home a  {
+  text-decoration: none;
+  color:
+  var(--pink);
+  margin-left: 3vh;
+}
+
+.home a :hover {
+  color: white;
 }
 
 /* Laptop */
