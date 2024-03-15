@@ -18,7 +18,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url(img/ASP_8633-Edit.jpeg.jpg);
+  background-image: url(galery/baritapp.jpg);
   background-size: cover;
   background-position: center;
   z-index: -1;
@@ -557,12 +557,12 @@ body {
   text-decoration: none;
 }
 
-.credits p a {
+.credits p a{
   color: var(--pink);
   text-decoration: none;
 }
 
-.credits p a:hover {
+.credits p a:hover{
   color: black
 }
 
